@@ -1,6 +1,6 @@
 # 포인핸드 홈페이지 리뉴얼 작업
 Link: [유기동물 입양 홈페이지로 리뉴얼](https://hyunji1117.github.io/Stray-animal-adoption-website/, "바로가기")  
-Link: [포인핸드 기존 공식 홈페이지](https://pawinhand.kr/index.html/, "바로가기")
+Link: [포인핸드 기존 공식 홈페이지](https://pawinhand.kr/index.html "바로가기")
 
 ##### 참여자: 김현지, 박** (팀 프로젝트)
   
