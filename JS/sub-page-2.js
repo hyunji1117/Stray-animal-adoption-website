@@ -19,7 +19,7 @@ $(function () {
 });
 
 //팝업창
-$('[id^="dogpopup"]').css('display', 'none');
+$('[id^="dogpopup1", id^="dogpopup2"]').css('display', 'none');
 
 $('#protect .protect-page > ul:nth-of-type(1)').click(function () {
     $('#dogpopup1').css('display', 'block');
@@ -66,6 +66,3 @@ $('.accordion-title').click(function () {
 
     // $(this).siblings().find('i').attr({'class': srcVal.replace('up', 'down')});
 });
-
-
-
