@@ -48,7 +48,7 @@ $(function () {
 //     }
 // });
 
-$(function () {
+$(document).ready(function () {
   // 팝업창 초기 상태 설정
   $('[id^="dogpopup"]').css('display', 'none');
 
@@ -74,6 +74,7 @@ $(function () {
       $(this).closest('[id^="dogpopup"]').css('display', 'none');
   });
 });
+
 
   
 
