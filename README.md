@@ -164,10 +164,6 @@ index page-3 작성 시 초기에는 swiper-container를 스크롤하도록 고�
 <p align="center">
   <img width="460" height="300" src="./assets/final.png">
 </p>  
-  
-<p align="center">
-  <img width="460" height="300" src="./assets/final-1.png">
-</p>  
 
 <p align="center">
   <img width="460" height="300" src="./assets/final-2.png">
