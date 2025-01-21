@@ -70,22 +70,6 @@ img {
   position: relative;
 }
 
-/* nav {
-  position: absolute;
-  width: 100%;
-}
-
-nav .nav-container {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 5;
-  padding: 0 0.8rem;
-  border-bottom: 1px solid rgba(130, 130, 130, 0.2);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-} */
-
 nav {
   -webkit-position: -webkit-sticky;
   position: sticky;
@@ -479,18 +463,35 @@ nav {
     }
 
     .box1 {
+
+      > img {
+        width: 300px;
+        height: 400px;
+      }
       background-color: #b3c4f8;
     }
 
     .box2 {
+      > img {
+        width: 300px;
+        height: 400px;
+      }
       background-color: #f8bfb4;
     }
 
     .box3 {
+      > img {
+        width: 300px;
+        height: 400px;
+      }
       background-color: #b4f8b6;
     }
 
     .box4 {
+      > img {
+        width: 300px;
+        height: 400px;
+      }
       background-color: #f8b4f6;
     }
   }
