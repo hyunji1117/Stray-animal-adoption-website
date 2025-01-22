@@ -248,8 +248,8 @@ nav {
   }
 }
 
-/* 공지사항, QnA 페이지 시작 */
 
+/* 공지사항, QnA 페이지 시작 */
 header {
   width: 100%;
   height: 500px;
@@ -327,7 +327,6 @@ header {
 
 /* main영역 */
 /* 보호동물 영역 */
-
 section {
   width: 1300px;
   height: auto;
@@ -337,6 +336,7 @@ section {
 }
 
 #protect {
+  /* 클릭하는 버튼 역할 */
   .protect-page {
     width: 100%;
     height: 100%;
@@ -344,80 +344,81 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-  }
 
-  ul {
-    width: 550px;
-    height: 250px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 25px;
-    box-sizing: border-box;
-    margin-bottom: 50px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+    > ul {
+      width: 550px;
+      height: 250px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 25px;
+      box-sizing: border-box;
+      margin-bottom: 50px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      list-style: none;
 
-    &:hover {
-      box-shadow: 5px 5px 5px #f0f0f0;
-    }
-
-    &:nth-of-type(7), &:nth-of-type(8) {
-      margin-bottom: 0px;
-    }
-
-    li {
-      &:nth-child(1) {
-        width: 200px;
-        height: 200px;
-        border-radius: 10px;
-        background: #EB9C00;
-        margin-right: 25px;
-
-        img {
-          width: 100%;
-          height: 100%;
-          border-radius: 10px;
-          -o-object-fit: cover;
-          object-fit: cover;
-        }
+      &:hover {
+        box-shadow: 5px 5px 5px #f0f0f0;
       }
 
-      p {
-        &.status {
-          border: 1px solid #42B23E;
-          color: #42B23E;
+      &:nth-of-type(7), &:nth-of-type(8) {
+        margin-bottom: 0px;
+      }
+
+      li {
+        &:nth-child(1) {
+          width: 200px;
+          height: 200px;
+          border-radius: 10px;
+          background: #EB9C00;
+          margin-right: 25px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            -o-object-fit: cover;
+            object-fit: cover;
+          }
         }
 
-        &.gender {
-          border: 1px solid #002AFF;
-          color: #002AFF;
-        }
+        p {
+          &.status {
+            border: 1px solid #42B23E;
+            color: #42B23E;
+          }
 
-        &.status-gr {
-          border: 1px solid #555;
-          color: #555;
-        }
+          &.gender {
+            border: 1px solid #002AFF;
+            color: #002AFF;
+          }
 
-        &.gender-f {
-          border: 1px solid #ff0000;
-          color: #ff0000;
-        }
-
-        &.status, &.gender, &.status-gr, &.gender-f {
-          display: inline-block;
-          border-radius: 5px;
-          padding: 2px 7px;
-          font-size: 13px;
-          margin-bottom: 10px;
-        }
-
-        &.info {
-          line-height: 2;
-
-          span {
+          &.status-gr {
+            border: 1px solid #555;
             color: #555;
-            margin-right: 15px;
+          }
+
+          &.gender-f {
+            border: 1px solid #ff0000;
+            color: #ff0000;
+          }
+
+          &.status, &.gender, &.status-gr, &.gender-f {
+            display: inline-block;
+            border-radius: 5px;
+            padding: 2px 7px;
+            font-size: 13px;
+            margin-bottom: 10px;
+          }
+
+          &.info {
+            line-height: 2;
+
+            span {
+              color: #555;
+              margin-right: 15px;
+            }
           }
         }
       }
@@ -425,10 +426,11 @@ section {
   }
 }
 
-/* 팝업 */
 
-[id^="dogpopup"] {
-  /* border: none; */
+
+/* 보호동물 팝업 */
+.popup {
+  display: none;
   width: 100%;
   height: 100%;
   padding: 20px;
@@ -450,14 +452,14 @@ section {
     left: 50%;
     display: flex;
   }
-
+  
   .popup-left {
     width: 50%;
     height: 100%;
     color: #222;
     border-radius: 10px;
   }
-
+  
   .popup-right {
     width: 50%;
     height: 100%;
@@ -469,11 +471,11 @@ section {
     flex-direction: column;
     justify-content: center;
   }
-
+  
   &.popup-right h2 {
     margin-bottom: 5px;
   }
-
+  
   .close-btn {
     position: absolute;
     top: 10px;
@@ -482,7 +484,7 @@ section {
     cursor: pointer;
     color: #333;
   }
-
+  
   img {
     width: 100%;
     height: 100%;
@@ -490,16 +492,16 @@ section {
     object-fit: cover;
     border-radius: 10px;
   }
-
+  
   .popup-right p {
     &.popup-info1 {
       font-size: 0.8rem;
     }
-
+  
     &.popup-info2 {
       line-height: 1.7;
       margin-top: 20px;
-
+  
       span {
         color: #555;
         margin-right: 20px;
@@ -508,8 +510,8 @@ section {
   }
 }
 
-/* 입양후기 영역 */
 
+/* 입양후기 영역 */
 #review h2 {
   text-align: center;
   margin-bottom: 50px;
@@ -609,10 +611,8 @@ section {
   }
 }
 
-#dogpopup1, #dogpopup2 { display: none; }
 
 /* footer */
-
 footer {
   width: 100%;
   height: 340px;

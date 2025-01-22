@@ -13,7 +13,7 @@
   <meta property="og:url" content="https://coworkcarrot.github.io/seedcollab/">
 
   <link rel="stylesheet" href="./CSS/sub-page-2.css">
-  <script defer src="./js/sub-page-2.js"></script>
+  <script defer src="./JS/sub-page-2.js"></script>
   <script defer src="./js/index.js"></script>
   <script defer src="./js/top-btn-scroll.js"></script>
 
@@ -109,9 +109,10 @@
       <h2 class="sr-only">보호동물 내용</h2>
       <!-- h2 요소를 숨기기 위해 style="display: none;" 대신 class="sr-only"와 같은 접근성 클래스 사용 -->
 
-      <div class="protect-page">
-
-        <ul>
+      <!-- 클릭하는 버튼 역할 -->
+      <label for="layer_popup" class="protect-page">
+        
+        <ul class="profile-1">
           <li>
             <img src="./assets/sub-page-2-profile1.jpg" alt="프렌치 불독 사진">
           </li>
@@ -127,7 +128,7 @@
           </li>
         </ul>
 
-        <ul>
+        <ul class="profile-2">
           <li>
             <img src="./assets/sub-page-2-profile2.jpg" alt="믹스견 사진">
           </li>
@@ -143,7 +144,7 @@
           </li>
         </ul>
 
-        <ul>
+        <ul class="profile-3">
           <li>
             <img src="./assets/sub-page-2-profile3.jpg" alt="믹스견 사진">
           </li>
@@ -159,7 +160,7 @@
           </li>
         </ul>
 
-        <ul>
+        <ul class="profile-4">
           <li>
             <img src="./assets/sub-page-2-profile4.jpg" alt="믹스견 사진">
           </li>
@@ -175,7 +176,7 @@
           </li>
         </ul>
 
-        <ul>
+        <ul class="profile-5">
           <li>
             <img src="./assets/sub-page-2-profile5.jpg" alt="믹스견 사진">
           </li>
@@ -191,7 +192,7 @@
           </li>
         </ul>
 
-        <ul>
+        <ul class="profile-6">
           <li>
             <img src="./assets/sub-page-2-profile6.jpg" alt="한국 고양이 사진">
           </li>
@@ -207,7 +208,7 @@
           </li>
         </ul>
 
-        <ul>
+        <ul class="profile-7">
           <li>
             <img src="./assets/sub-page-2-profile7.jpg" alt="진도견 사진">
           </li>
@@ -223,7 +224,7 @@
           </li>
         </ul>
 
-        <ul>
+        <ul class="profile-8">
           <li>
             <img src="./assets/sub-page-2-profile8.jpg" alt="믹스견 사진">
           </li>
@@ -238,21 +239,20 @@
             </p>
           </li>
         </ul>
-      </div>
+      </label>
+      <!-- //클릭하는 버튼 역할 -->
 
 
 
       <!--보호동물 팝업 -->
-      <div id="dogpopup1" role="dialog" aria-labelledby="popupTitle" aria-describedby="popupDesc" aria-hidden="true">
-        <!-- aria-labelledby와 aria-describedby 사용: 팝업 콘텐츠가 보다 명확하게 설명되도록 aria-describedby 속성을 사용하여 보조기술이 팝업의 내용을 더 잘 이해할 수 있도록함함
-        role="dialog" 추가: 팝업은 대화형 요소로 간주되므로 role="dialog"를 추가하여 팝업을 대화 상자로 인식 -->
+      <div id="profile-1" class="popup" role="dialog" aria-labelledby="popupTitle" aria-describedby="popupDesc">
         <div class="popup-content">
           <button class="close-btn" aria-label="닫기">&times;</button>
-
+    
           <div class="popup-left">
             <img src="./assets/sub-page-2-profile1.jpg" alt="프렌치 불독 사진">
           </div>
-
+    
           <div class="popup-right">
             <h2>[개] 프렌치 불독</h2>
             <p class="popup-info1">수컷(중성화 X)/ 호반색(호랑이무늬)/ 2025(60일미만)/ 1.5kg</p>
@@ -268,14 +268,9 @@
             </p>
           </div>
         </div>
-
       </div>
 
-
-        
-      <div id="dogpopup2" role="dialog" aria-labelledby="popupTitle" aria-describedby="popupDesc" aria-hidden="true">
-        <!-- aria-labelledby와 aria-describedby 사용: 팝업 콘텐츠가 보다 명확하게 설명되도록 aria-describedby 속성을 사용하여 보조기술이 팝업의 내용을 더 잘 이해할 수 있도록함함
-        role="dialog" 추가: 팝업은 대화형 요소로 간주되므로 role="dialog"를 추가하여 팝업을 대화 상자로 인식 -->
+      <div id="profile-2" class="popup" role="dialog" aria-labelledby="popupTitle" aria-describedby="popupDesc">
         <div class="popup-content">
           <button class="close-btn" aria-label="닫기">&times;</button>
 
@@ -298,8 +293,157 @@
             </p>
           </div>
         </div>
-        </div>
+      </div>
 
+      <div id="profile-3" class="popup" role="dialog" aria-labelledby="popupTitle" aria-describedby="popupDesc">
+        <div class="popup-content">
+          <button class="close-btn" aria-label="닫기">&times;</button>
+    
+          <div class="popup-left">
+            <img src="./assets/sub-page-2-profile3.jpg" alt="믹스견 사진">
+          </div>
+    
+          <div class="popup-right">
+            <h2>[개] 믹스견</h2>
+            <p class="popup-info1">수컷(중성화 X)/ 호반색(호랑이무늬)/ 2025(60일미만)/ 1.5kg</p>
+            <p class="popup-info2">
+              <span>입양날짜</span><b><span style="color: #EB9C00; margin:0;">10</span> 일 후 입양가능</b><br>
+              <span>공고번호</span><span style="color: #EB9C00;">충북-청주-2025-00024</span><br>
+              <span>공고기간</span>25.12.13 ~ 25.01.23<br>
+              <span>발견장소</span>옥산면 국사 3길 41번지 부근<br>
+              <span>특이사항</span>2.5개월령의 아기 강아지, 활달한편<br>
+              <span>보호센터</span>반려동물보호센터 (Tel: 043-201-2298)<br>
+              <span>관할기관</span>충청북도 청주시 (Tel: 043-201-2296)<br>
+              <span>전화문의</span>평일 오전 9시부터 6시까지 (공휴일제외)
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="profile-4" class="popup" role="dialog" aria-labelledby="popupTitle" aria-describedby="popupDesc">
+        <div class="popup-content">
+          <button class="close-btn" aria-label="닫기">&times;</button>
+    
+          <div class="popup-left">
+            <img src="./assets/sub-page-2-profile4.jpg" alt="프렌치 불독 사진">
+          </div>
+    
+          <div class="popup-right">
+            <h2>[개] 프렌치 불독</h2>
+            <p class="popup-info1">수컷(중성화 X)/ 호반색(호랑이무늬)/ 2025(60일미만)/ 1.5kg</p>
+            <p class="popup-info2">
+              <span>입양날짜</span><b><span style="color: #EB9C00; margin:0;">10</span> 일 후 입양가능</b><br>
+              <span>공고번호</span><span style="color: #EB9C00;">충북-청주-2025-00024</span><br>
+              <span>공고기간</span>2025-01-13 ~ 2025-01-23<br>
+              <span>발견장소</span>복대사거리 인근<br>
+              <span>특이사항</span>2.5개월령의 아기 강아지, 활달한편<br>
+              <span>보호센터</span>반려동물보호센터 (Tel: 043-201-2298)<br>
+              <span>관할기관</span>충청북도 청주시 (Tel: 043-201-2296)<br>
+              <span>전화문의</span>평일 오전 9시부터 6시까지 (공휴일제외)
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="profile-5" class="popup" role="dialog" aria-labelledby="popupTitle" aria-describedby="popupDesc">
+        <div class="popup-content">
+          <button class="close-btn" aria-label="닫기">&times;</button>
+    
+          <div class="popup-left">
+            <img src="./assets/sub-page-2-profile5.jpg" alt="프렌치 불독 사진">
+          </div>
+    
+          <div class="popup-right">
+            <h2>[개] 프렌치 불독</h2>
+            <p class="popup-info1">수컷(중성화 X)/ 호반색(호랑이무늬)/ 2025(60일미만)/ 1.5kg</p>
+            <p class="popup-info2">
+              <span>입양날짜</span><b><span style="color: #EB9C00; margin:0;">10</span> 일 후 입양가능</b><br>
+              <span>공고번호</span><span style="color: #EB9C00;">충북-청주-2025-00024</span><br>
+              <span>공고기간</span>2025-01-13 ~ 2025-01-23<br>
+              <span>발견장소</span>복대사거리 인근<br>
+              <span>특이사항</span>2.5개월령의 아기 강아지, 활달한편<br>
+              <span>보호센터</span>반려동물보호센터 (Tel: 043-201-2298)<br>
+              <span>관할기관</span>충청북도 청주시 (Tel: 043-201-2296)<br>
+              <span>전화문의</span>평일 오전 9시부터 6시까지 (공휴일제외)
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="profile-6" class="popup" role="dialog" aria-labelledby="popupTitle" aria-describedby="popupDesc">
+        <div class="popup-content">
+          <button class="close-btn" aria-label="닫기">&times;</button>
+    
+          <div class="popup-left">
+            <img src="./assets/sub-page-2-profile6.jpg" alt="프렌치 불독 사진">
+          </div>
+    
+          <div class="popup-right">
+            <h2>[개] 프렌치 불독</h2>
+            <p class="popup-info1">수컷(중성화 X)/ 호반색(호랑이무늬)/ 2025(60일미만)/ 1.5kg</p>
+            <p class="popup-info2">
+              <span>입양날짜</span><b><span style="color: #EB9C00; margin:0;">10</span> 일 후 입양가능</b><br>
+              <span>공고번호</span><span style="color: #EB9C00;">충북-청주-2025-00024</span><br>
+              <span>공고기간</span>2025-01-13 ~ 2025-01-23<br>
+              <span>발견장소</span>복대사거리 인근<br>
+              <span>특이사항</span>2.5개월령의 아기 강아지, 활달한편<br>
+              <span>보호센터</span>반려동물보호센터 (Tel: 043-201-2298)<br>
+              <span>관할기관</span>충청북도 청주시 (Tel: 043-201-2296)<br>
+              <span>전화문의</span>평일 오전 9시부터 6시까지 (공휴일제외)
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="profile-7" class="popup" role="dialog" aria-labelledby="popupTitle" aria-describedby="popupDesc">
+        <div class="popup-content">
+          <button class="close-btn" aria-label="닫기">&times;</button>
+    
+          <div class="popup-left">
+            <img src="./assets/sub-page-2-profile7.jpg" alt="프렌치 불독 사진">
+          </div>
+    
+          <div class="popup-right">
+            <h2>[개] 프렌치 불독</h2>
+            <p class="popup-info1">수컷(중성화 X)/ 호반색(호랑이무늬)/ 2025(60일미만)/ 1.5kg</p>
+            <p class="popup-info2">
+              <span>입양날짜</span><b><span style="color: #EB9C00; margin:0;">10</span> 일 후 입양가능</b><br>
+              <span>공고번호</span><span style="color: #EB9C00;">충북-청주-2025-00024</span><br>
+              <span>공고기간</span>2025-01-13 ~ 2025-01-23<br>
+              <span>발견장소</span>복대사거리 인근<br>
+              <span>특이사항</span>2.5개월령의 아기 강아지, 활달한편<br>
+              <span>보호센터</span>반려동물보호센터 (Tel: 043-201-2298)<br>
+              <span>관할기관</span>충청북도 청주시 (Tel: 043-201-2296)<br>
+              <span>전화문의</span>평일 오전 9시부터 6시까지 (공휴일제외)
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="profile-8" class="popup" role="dialog" aria-labelledby="popupTitle" aria-describedby="popupDesc">
+        <div class="popup-content">
+          <button class="close-btn" aria-label="닫기">&times;</button>
+    
+          <div class="popup-left">
+            <img src="./assets/sub-page-2-profile8.jpg" alt="프렌치 불독 사진">
+          </div>
+    
+          <div class="popup-right">
+            <h2>[개] 프렌치 불독</h2>
+            <p class="popup-info1">수컷(중성화 X)/ 호반색(호랑이무늬)/ 2025(60일미만)/ 1.5kg</p>
+            <p class="popup-info2">
+              <span>입양날짜</span><b><span style="color: #EB9C00; margin:0;">10</span> 일 후 입양가능</b><br>
+              <span>공고번호</span><span style="color: #EB9C00;">충북-청주-2025-00024</span><br>
+              <span>공고기간</span>2025-01-13 ~ 2025-01-23<br>
+              <span>발견장소</span>복대사거리 인근<br>
+              <span>특이사항</span>2.5개월령의 아기 강아지, 활달한편<br>
+              <span>보호센터</span>반려동물보호센터 (Tel: 043-201-2298)<br>
+              <span>관할기관</span>충청북도 청주시 (Tel: 043-201-2296)<br>
+              <span>전화문의</span>평일 오전 9시부터 6시까지 (공휴일제외)
+            </p>
+          </div>
+        </div>
+      </div>
 
     </section>
 

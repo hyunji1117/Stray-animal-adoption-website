@@ -221,7 +221,7 @@ header {
   margin: 0 auto;
   position: relative;
   background: #000;
-  z-index: -1;
+  z-index: 1;
 }
 header::after {
   background: url("../assets/sub-page-2-banner1.jpg");
@@ -293,6 +293,9 @@ section {
   position: relative;
 }
 
+#protect {
+  /* 클릭하는 버튼 역할 */
+}
 #protect .protect-page {
   width: 100%;
   height: 100%;
@@ -301,7 +304,7 @@ section {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-#protect ul {
+#protect .protect-page > ul {
   width: 550px;
   height: 250px;
   border: 1px solid #ccc;
@@ -312,61 +315,62 @@ section {
   cursor: pointer;
   display: flex;
   align-items: center;
+  list-style: none;
 }
-#protect ul:hover {
+#protect .protect-page > ul:hover {
   box-shadow: 5px 5px 5px #f0f0f0;
 }
-#protect ul:nth-of-type(7), #protect ul:nth-of-type(8) {
+#protect .protect-page > ul:nth-of-type(7), #protect .protect-page > ul:nth-of-type(8) {
   margin-bottom: 0px;
 }
-#protect ul li:nth-child(1) {
+#protect .protect-page > ul li:nth-child(1) {
   width: 200px;
   height: 200px;
   border-radius: 10px;
   background: #EB9C00;
   margin-right: 25px;
 }
-#protect ul li:nth-child(1) img {
+#protect .protect-page > ul li:nth-child(1) img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
   -o-object-fit: cover;
   object-fit: cover;
 }
-#protect ul li p.status {
+#protect .protect-page > ul li p.status {
   border: 1px solid #42B23E;
   color: #42B23E;
 }
-#protect ul li p.gender {
+#protect .protect-page > ul li p.gender {
   border: 1px solid #002AFF;
   color: #002AFF;
 }
-#protect ul li p.status-gr {
+#protect .protect-page > ul li p.status-gr {
   border: 1px solid #555;
   color: #555;
 }
-#protect ul li p.gender-f {
+#protect .protect-page > ul li p.gender-f {
   border: 1px solid #ff0000;
   color: #ff0000;
 }
-#protect ul li p.status, #protect ul li p.gender, #protect ul li p.status-gr, #protect ul li p.gender-f {
+#protect .protect-page > ul li p.status, #protect .protect-page > ul li p.gender, #protect .protect-page > ul li p.status-gr, #protect .protect-page > ul li p.gender-f {
   display: inline-block;
   border-radius: 5px;
   padding: 2px 7px;
   font-size: 13px;
   margin-bottom: 10px;
 }
-#protect ul li p.info {
+#protect .protect-page > ul li p.info {
   line-height: 2;
 }
-#protect ul li p.info span {
+#protect .protect-page > ul li p.info span {
   color: #555;
   margin-right: 15px;
 }
 
-/* 팝업 */
-[id^=dogpopup] {
-  /* border: none; */
+/* 보호동물 팝업 */
+.popup {
+  display: none;
   width: 100%;
   height: 100%;
   padding: 20px;
@@ -376,7 +380,7 @@ section {
   left: 0;
   z-index: 5;
 }
-[id^=dogpopup] .popup-content {
+.popup .popup-content {
   width: 800px;
   height: 500px;
   border-radius: 10px;
@@ -388,13 +392,13 @@ section {
   left: 50%;
   display: flex;
 }
-[id^=dogpopup] .popup-left {
+.popup .popup-left {
   width: 50%;
   height: 100%;
   color: #222;
   border-radius: 10px;
 }
-[id^=dogpopup] .popup-right {
+.popup .popup-right {
   width: 50%;
   height: 100%;
   color: #222;
@@ -405,10 +409,10 @@ section {
   flex-direction: column;
   justify-content: center;
 }
-[id^=dogpopup].popup-right h2 {
+.popup.popup-right h2 {
   margin-bottom: 5px;
 }
-[id^=dogpopup] .close-btn {
+.popup .close-btn {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -416,21 +420,21 @@ section {
   cursor: pointer;
   color: #333;
 }
-[id^=dogpopup] img {
+.popup img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 10px;
 }
-[id^=dogpopup] .popup-right p.popup-info1 {
+.popup .popup-right p.popup-info1 {
   font-size: 0.8rem;
 }
-[id^=dogpopup] .popup-right p.popup-info2 {
+.popup .popup-right p.popup-info2 {
   line-height: 1.7;
   margin-top: 20px;
 }
-[id^=dogpopup] .popup-right p.popup-info2 span {
+.popup .popup-right p.popup-info2 span {
   color: #555;
   margin-right: 20px;
 }
