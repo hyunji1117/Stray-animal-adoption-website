@@ -8,9 +8,9 @@ Link: [포인핸드 기존 공식 홈페이지](https://pawinhand.kr/index.html 
   
 #### 프로젝트 도구
 
-프론트엔드 기술: HTML, CSS, JavaScript  
-라이브러리 및 프레임워크: jQuery, Font Awesome, Google Fonts
-디자인 및 에셋 관리: Figma (디자인 레이아웃 사용), Assets 폴더 (이미지 및 아이콘 관리)
+프론트엔드 기술: HTML, CSS, JavaScript   
+라이브러리 및 프레임워크: jQuery, Font Awesome, Google Fonts  
+디자인 및 에셋 관리: Figma (디자인 레이아웃 사용), Assets 폴더 (이미지 및 아이콘 관리)  
 호스팅: GitHub Pages  
   
 #### 사용 언어: HTML5, SCSS (CSS 포함), JavaScript (ES6 이상)  
