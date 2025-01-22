@@ -221,7 +221,7 @@ header {
   margin: 0 auto;
   position: relative;
   background: #000;
-  z-index: 1;
+  z-index: -1;
 }
 header::after {
   background: url("../assets/sub-page-2-banner1.jpg");
